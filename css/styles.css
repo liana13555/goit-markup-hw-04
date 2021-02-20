@@ -102,11 +102,14 @@
 .work {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: calc(-1 * var(--feature-gap));
+  margin-top: calc(-1 * var(--feature-gap));
 }
   
 .work > .item {
-  width: calc(100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - var(--feature-gap));
+  margin-left: var(--feature-gap);
+  margin-top: var(--feature-gap);
 }
 
 .work .item img {
@@ -128,12 +131,15 @@
 .team {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
- 
+
+  margin-left: calc(-1 * var(--feature-gap));
+  margin-top: calc(-1 * var(--feature-gap)); 
 }
   
 .team > .item {
-  width: calc(100% / 4 - 30px);
+  flex-basis: calc(100% / 4 - var(--feature-gap));
+  margin-left: var(--feature-gap);
+  margin-top: var(--feature-gap);
   
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -179,6 +185,7 @@
   width: 44px;
   height: 44px;
   background-color: var(--white-color:);
+  border-radius: 50%;
 }
 
 .social-links .link {
@@ -214,7 +221,6 @@
 .clients {
   display: flex;
   justify-content: space-between  ;
-  
 }
 
 .clients .link {
@@ -223,18 +229,20 @@
   align-items: center;
   width: 170px;
   height: 90px;
+  color: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 
 .clients .icon {
-  fill: var(--icon-color);
+  fill: currentColor;
 }
 
-/* .clients .link:hover,
+.clients .link:hover, 
 .clients .link:focus {
+  border: 1px solid var(--accent-color);
   color: var(--accent-color);
-} */
+}  
 
 .clients .icon:hover,
 .clients .icon:focus {

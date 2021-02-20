@@ -246,14 +246,21 @@ footer {
 
 .join li {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.join li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .join .link {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: inherit;
   height: inherit; 
@@ -268,8 +275,4 @@ footer {
 .join .link:focus {
   background-color: var(--accent-color);
 }
-
-.social-links .icon:hover,
-.social-links .icon:focus {
-  fill: var(--white-color);
-}
+ 
