@@ -6,6 +6,7 @@
 /* футер rgba(255, 255, 255, 0.6) */
 /* вторичный цвет фона #2F303A */
 /* дополнительный цвет фона #F5F4FA */
+/* цвет иконок #AFB1B8 */
 
 :root {
   --primary-text-color: #757575;
@@ -16,6 +17,7 @@
   --secondary-black-color: rgba(255, 255, 255, 0.6);
   --secondary-bg-color: #2F303A;
   --additional-bg-color: #F5F4FA;
+  --icon-color: #AFB1B8;
   --feature-gap: 30px;
 }
   
@@ -62,11 +64,6 @@ p {
 
 /* Header */ 
 
-.container.main-nav {
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   color: var(--primary-black-color);
   font-family: Raleway, sans-serif;
@@ -111,8 +108,6 @@ p {
 }
 
 .site-nav a {
-  display: flex;
-  align-items: center;
   color: var(--title-text-color);
 }
 
@@ -189,17 +184,23 @@ p {
 
 footer {
   max-width: 1600px;
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .address .text {
   margin-top: 20px;
   margin-bottom: 9px;
   color: var(--white-color);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -207,6 +208,7 @@ footer {
 
 .address .link {
   color: var(--secondary-black-color);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -216,11 +218,58 @@ footer {
   margin-bottom: 9px;
 }
 
-
 .logo-footer {
   color: var(--white-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+
+.social {
+  padding-top: 12px;
+  margin-left: 70px;
+}
+
+.join {
+  display: flex;
+}
+
+.social .text {
+  margin-bottom: 20px;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14; 
+  text-transform: uppercase;
+}
+
+.join li {
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.join .link {
+  display: flex;
+  align-items: center;
+  width: inherit;
+  height: inherit; 
+  border-radius: 50%;
+} 
+
+.join .icon {
+  fill: var(--white-color);
+}
+
+.join .link:hover,
+.join .link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-links .icon:hover,
+.social-links .icon:focus {
+  fill: var(--white-color);
 }
