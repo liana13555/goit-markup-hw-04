@@ -182,8 +182,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
   background-color: var(--white-color:);
   border-radius: 50%;
 }
@@ -192,23 +190,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: inherit;
-  height: inherit; 
+  width: 44px;
+  height: 44px; 
+  color: var(--icon-color);
   border-radius: 50%;
 } 
 
 .social-links .icon {
-  fill: var(--icon-color);
+  fill: currentColor;
 }
 
 .social-links .link:hover,
 .social-links .link:focus {
+  color: var(--white-color);
   background-color: var(--accent-color);
-}
-
-.social-links .icon:hover,
-.social-links .icon:focus {
-  fill: var(--white-color);
 }
 
 /* Clients */
