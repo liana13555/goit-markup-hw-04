@@ -1,4 +1,12 @@
-/* Site nav */ 
+/* Header */ 
+
+.page-header {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #ECECEC;
+}
+
 
 .site-nav .link.current {
   color: var(--accent-color);
@@ -19,6 +27,7 @@
   line-height: 1.6;
   text-align: center;
   outline: none;
+  border-radius: 4px;
   border: transparent;
 }
 
@@ -26,8 +35,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  border-radius: 4px;
-}
+}  
 
 .portfolio-btns .item:not(:last-child) {
   margin-right: 8px;
@@ -39,10 +47,10 @@
   color: var(--white-color);
 }
 
-.button.primary.current {
+/* .button.primary.current {
   background-color: var(--accent-color);
   color: var(--white-color);
-}
+} */
 
 /* Cards */ 
 
@@ -63,10 +71,6 @@
 
 .portfolio-list .item:hover,
 .portfolio-list .item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-list .item:first-child{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
